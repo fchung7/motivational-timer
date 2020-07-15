@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    text-align-last: center;
+    margin-bottom: 20px;
+}
+.session {
+    margin-top: 30px;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    color: black;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+
+.buttons {
+    margin-top: 20px;    
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 90px;
+    margin: auto;
+}
+
+.btn-circle:focus {
+    box-shadow: none;
+  }
+
+
+.btn-circle.btn-sm { 
+    width: 30px; 
+    height: 30px; 
+    padding: 4px 0px; 
+    border-radius: 15px; 
+    font-size: 15px; 
+    text-align: center; 
+    border: none;
+} 
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+
+
+.pause {
+    background-color: yellow;
+}
