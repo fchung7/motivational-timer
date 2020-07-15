@@ -47,7 +47,7 @@ function start() {
     document.title = "Motivational Timer " + countStart.innerHTML;
 
     if (seconds === 0 && minutes === 0) {
-      let audio = new Audio("vitinho1.mp3");
+      let audio = new Audio("motiv1.mp3");
       audio.play();
     }
     
