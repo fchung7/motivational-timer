@@ -56,6 +56,8 @@ function start() {
   buttonStart.removeEventListener("click", start);
   buttonStart.innerHTML = "Pause";
   buttonStart.addEventListener("click", pause);
+  let audio = new Audio("motiv2.mp3")
+  audio.play()
 }
 
 function pause() {
