@@ -9,9 +9,7 @@ const audioFiles = [
   "shia-just.mp3",
   "shia-stop.mp3",
   "shia-nothing.mp3",
-  "shia-yesterday.mp3",
-  "rocky-hit.mp3",
-  "eye-of.mp3",
+  "shia-yesterday.mp3",  
 ];
 const audioBreak = [
   "wow-lvl.mp3",
