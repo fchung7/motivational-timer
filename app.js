@@ -47,10 +47,10 @@ function start() {
     document.title = "Motivational Timer " + countStart.innerHTML;
 
     if (seconds === 0 && minutes === 0) {
-      let audio = new Audio("vitinho2.mp3");
+      let audio = new Audio("vitinho1.mp3");
       audio.play();
     }
-    console.log(seconds);
+    
   }
   console.log("start");
   buttonStart.removeEventListener("click", start);
