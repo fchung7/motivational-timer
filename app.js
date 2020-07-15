@@ -5,8 +5,7 @@ let intervalCount;
 
 const audioFiles = ["shia-dont.mp3", "shia-just.mp3", "shia-stop.mp3", "shia-yesterday.mp3"]
 
-let randomIndex = Math.floor(Math.random()*audioFiles.length)
-let randomAudio = audioFiles[randomIndex]
+
 
 const countStart = document.querySelector(".count-down");
 const buttonStart = document.querySelector(".start");
@@ -31,6 +30,8 @@ buttonStart.addEventListener("click", start);
 
 function start() {
   intervalCount = setInterval(updateCountDown, 1000);
+  let randomIndex = Math.floor(Math.random()*audioFiles.length)
+  let randomAudio = audioFiles[randomIndex]
 
   function updateCountDown() {
     let minutes = Math.floor(timeInSeconds / 60);
@@ -58,6 +59,7 @@ function start() {
     }
     
   }
+  
   console.log("start");
   buttonStart.removeEventListener("click", start);
   buttonStart.innerHTML = "Pause";
