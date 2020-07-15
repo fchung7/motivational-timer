@@ -3,7 +3,10 @@ let timeInSeconds = startingCount * 60;
 let intervalCount;
 
 
-const audioFiles = []
+const audioFiles = ["shia-dont.mp3", "shia-just.mp3", "shia-stop.mp3", "shia-yesterday.mp3"]
+
+let randomIndex = Math.floor(Math.random()*audioFiles.length)
+let randomAudio = audioFiles[randomIndex]
 
 const countStart = document.querySelector(".count-down");
 const buttonStart = document.querySelector(".start");
@@ -50,7 +53,7 @@ function start() {
     document.title = "Motivational Timer " + countStart.innerHTML;
 
     if (seconds === 0 && minutes === 0) {
-      let audio = new Audio("https://raw.githubusercontent.com/fchung7/motivational-timer/master/audio/shia-dont.mp3");
+      let audio = new Audio("https://raw.githubusercontent.com/fchung7/motivational-timer/master/audio/" + randomAudio);
       audio.play();
     }
     
@@ -59,7 +62,7 @@ function start() {
   buttonStart.removeEventListener("click", start);
   buttonStart.innerHTML = "Pause";
   buttonStart.addEventListener("click", pause);
-  let audio = new Audio("https://raw.githubusercontent.com/fchung7/motivational-timer/master/audio/shia-stop.mp3")
+  let audio = new Audio("https://raw.githubusercontent.com/fchung7/motivational-timer/master/audio/" + randomAudio)
   audio.play()
 }
 
