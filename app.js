@@ -8,6 +8,7 @@ const audioFiles = [
   "shia-dont.mp3",
   "shia-just.mp3",
   "shia-stop.mp3",
+  "shia-nothing.mp3",
   "shia-yesterday.mp3",
   "rocky-hit.mp3",
   "eye-of.mp3",
